@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'counter_page.dart';
 import 'result_page.dart';
+import 'list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       home: const CounterPage(),
       routes: {
         '/result': (context) => const ResultPage(),
+        '/list': (context) => ListPage(),
       },
     );
   }

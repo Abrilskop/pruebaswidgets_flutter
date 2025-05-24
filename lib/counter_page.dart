@@ -82,6 +82,13 @@ class _CounterPageState extends State<CounterPage> {
               onPressed: _navigate,
               child: const Text('Ir a Resultados'),
             ),
+            ElevatedButton(
+              key: const Key('goToListBtn'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/list');
+              },
+              child: const Text('Ir a Lista'),
+            ),
           ],
         ),
       ),
