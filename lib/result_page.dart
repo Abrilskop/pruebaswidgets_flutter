@@ -12,8 +12,11 @@ class ResultPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Resultados')),
       body: Center(
-        child: Text('Hola $name, tu contador es $counter',
-            style: const TextStyle(fontSize: 20), key: Key('resultText')),
+        child: Text(
+          'Hola $name, tu contador es $counter',
+          key: const Key('resultText'),
+          style: const TextStyle(fontSize: 24),
+        ),
       ),
     );
   }

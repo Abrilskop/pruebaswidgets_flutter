@@ -35,10 +35,11 @@ class _ListPageState extends State<ListPage> {
               decoration: const InputDecoration(labelText: 'Nueva tarea'),
             ),
             const SizedBox(height: 10),
-            ElevatedButton(
+            ElevatedButton.icon(
               key: const Key('addTaskBtn'),
               onPressed: _addTask,
-              child: const Text('Agregar'),
+              icon: const Icon(Icons.add_task),
+              label: const Text('Agregar'),
             ),
             const SizedBox(height: 10),
             Expanded(
