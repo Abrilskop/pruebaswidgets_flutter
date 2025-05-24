@@ -16,20 +16,20 @@ class _CounterPageState extends State<CounterPage> {
       _counter++;
     });
   }
-
+// TO DO: poner el decremento hasta 0
   void _decrement() {
     setState(() {
       _counter--;
     });
   }
-
+// TO DO: en el reset se debe considerar que borrar nombre y contador
   void _reset() {
     setState(() {
       _counter = 0;
     });
   }
 
-
+// TO DO: si es que no ingresa nada en el campo name debe aparecer el mensaje del nombre es un requisito
   void _navigate() {
     if (_nameController.text.isNotEmpty) {
       Navigator.pushNamed(
